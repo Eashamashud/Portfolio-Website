@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: blueviolet;
+  background-color: black;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  background: palevioletred;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: blueviolet;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: blue;
+  text-shadow: 0 0 25px blue, 0 0 50px blue;
+  transform: scale(1.1);
+}
+
+.navbar a {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin: 0 10px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+  text-decoration: none; /* Add this to remove underline from links */
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+.contact-btn {
+  padding: 10px 15px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  text-decoration: none; /* Add this to remove underline from links */
+  margin-left: 10px;
+}
+
+.contact-btn:hover {
+  background-color: blue;
+  box-shadow: 0 0 25px blue;
+  color: white;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  gap: 7em;
+  padding: 30px 12% 0;
+}
+
+.home-content {
+  max-width: 800px;
+  margin-top: 80px;
+}
+
+.home-content h3 {
+  font-size: 42px;
+}
+
+.home-content h1 {
+  font-size: 62px;
+  line-height: 1.2;
+}
+
+.home-content p {
+  font-size: 30px;
+  margin: 25px 0 30px;
+  margin-top: 80px;
+}
+
+.btn-box {
+  width: 345px;
+  display: flex;
+  gap: 2em;
+}
+
+.btn-1 {
+  padding: 15px 28px;
+  background-color: palevioletred;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.btn-2 {
+  padding: 15px 28px;
+  background-color: palevioletred;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-2:hover {
+  background-color: white;
+  color: blue;
+}
+
+.img-box img {
+  border-radius: 50%;
+  width: 550px;
+  margin-left: 800px;
+  margin-bottom: 90px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12% 8%;
+  gap: 10em;
+  background: palevioletred;
+}
+
+.about-img img {
+  position: relative;
+  width: 550px;
+  box-shadow: 0 0 25px blue, 0 0 50px blue;
+  border-radius: 50%;
+}
+
+.about-content h2 {
+  text-align: left;
+  color: white;
+  font-size: 42px;
+}
+
+.about-content h3 {
+  font-size: 62px;
+  color: white;
+}
+
+.about-content p {
+  color: white;
+  font-size: 20px;
+  margin: 2em 0 3em;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 36px;
+}
+
+.contact-form form {
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 18px;
+  color: black;
+  background: rgb(241, 241, 241);
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  resize: none;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 400px 0;
+  background-color: palevioletred;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: black;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: white;
+  border: 2px solid blue;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  box-shadow: insert 0 0 10px blue, 0 0 10px blue;
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px);
+  color: blue;
+  border: 2px solid blue;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+  border-bottom: 3px solid blue;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+.resume-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #45a049;
+}
+
+#Education {
+  background-color: #f4f4f4; /* Light grey background */
+  padding: 20px; /* Add padding */
+  margin: 20px 0; /* Add vertical margin */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center-align text */
+  margin-top: 300px;
+}
+
+.education-header {
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.education-header h1 {
+  font-size: 36px; /* Large font size for the title */
+  color: #333; /* Dark text color */
+}
+
+.education-details p {
+  font-size: 18px; /* Slightly smaller font size for the description */
+  color: #666; /* Grey text color */
+  line-height: 1.6; /* Line height for readability */
+}
